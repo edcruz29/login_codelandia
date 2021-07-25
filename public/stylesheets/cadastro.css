@@ -1,0 +1,110 @@
+.container {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+  }
+  .form {
+    padding: 100px 30px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    margin: 0 auto;
+  }
+  .saudacao {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--dark);
+    margin-bottom: 7px;
+  }
+  .titulo {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: var(--dark);
+    margin-bottom: 40px;
+  }
+  .form-label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark);
+    margin-bottom: 11px;
+  }
+  .form-control {
+    height: 50px;
+    border: 1px solid #e8e8e8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .label-wraper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-check-label {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--blue);
+  }
+  .form-check-input:checked {
+    background-color: var(--green);
+    border-color: var(--green);
+  }
+  .btn {
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    margin-bottom: 15px;
+  }
+  .btn-primary {
+    border-color: var(--green);
+    background-color: var(--green);
+  }
+  .cadastro {
+    text-align: center;
+    margin-top: 160px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark);
+  }
+  .cadastro-link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--blue);
+  }
+ 

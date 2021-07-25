@@ -10,39 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/variaveis.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/cadastro.css">
     <title>Hello, world!</title>
   </head>
   <body>
       <div class="container">
-      <div class="img_wraper">
-        <img src="/images/image.svg" alt="" class="fullScreen">
-      </div> 
       <div class="form">
-      <h2 class="saudacao">Bem vindo de volta!</h2>
-      <h1 class="titulo">Faça login na sua conta</h1>
+      <h2 class="saudacao">Bem vindo!</h2>
+      <h1 class="titulo">Crie sua conta preenchendo o cadastro</h1>
       <form action="/login" method="POST">
+        <div class="mb-3">
+            <label for="exampleInputText1" class="form-label">Nome</label>
+            <input type="text" class="form-control" name="nome" id="exampleInputText1" required>
+          </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">E-mail</label>
           <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Senha</label>
-          <input type="password" class="form-control" name="senha" id="exampleInputPassword1" required>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="radio" class="form-check-input" id="exampleCheck1">
-          <div class="label-wraper">
-          <label class="form-check-label" for="exampleCheck1">Lembre de mim</label>
-          <a class="link" href="">Esqueceu a senha?</a>
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" name="senha" id="exampleInputPassword1" required>
           </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Confirmar Senha</label>
+          <input type="password" class="form-control" name="confirmar" id="exampleInputPassword1" required>
         </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
-        <button type="submit" class="btn btn-dark"><img src="/images/iconfinder_Google_1298745 1.svg" alt=""></i>
-          Ou faça login com o Google</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
 
-      <p class="cadastro">Não tem conta? <a class="cadastro-link" href="/cadastro">Cadastre-se</a></p>
+      <p class="cadastro">Já tem cadastro?<a class="cadastro-link" href="/">Faça o seu login!</a></p>
     </div>
   </div>
   <script src="https://kit.fontawesome.com/72b828f62d.js" crossorigin="anonymous"></script>
