@@ -1,4 +1,4 @@
-.container {
+.container-fluid {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,6 +19,7 @@
 }
 .form {
   padding-left: 193px;
+  padding-right: 193px;
   padding-top: 213px;
   padding-bottom: 213px;
   width: 100%;

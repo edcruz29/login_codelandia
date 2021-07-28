@@ -1,0 +1,65 @@
+/*Variáveis*/
+:root {
+  --bgSite: #d7d4ff;
+  --buttonColor: #6c63ff;
+  --cards: #ffffff;
+  --white: #ffffff;
+  --white300: #f9f9f9;
+  --box: rgba(0, 0, 0, 0.1);
+
+  --title: #2b2b2b;
+  --text: #555555;
+}
+[data-theme="dark"] {
+  --cards: #000000;
+  --white: #fff;
+  --bgSite: #181818;
+  --box: #2300a3a9;
+  --title: #fff;
+  --text: #e5e5e5;
+
+  --linear: #202020;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}

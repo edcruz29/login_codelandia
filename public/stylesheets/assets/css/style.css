@@ -1,0 +1,245 @@
+body {
+  margin: 0 auto;
+  background-color: var(--bgSite);
+}
+.container {
+  background-color: var(--bgSite);
+}
+.modo__noturno {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.fa-moon {
+  color: var(--white);
+}
+.fa-sun {
+  color: var(--text);
+}
+#theme {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1240px;
+}
+.header__text__wrapper {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header__titulo {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 47px;
+  color: var(--title);
+}
+.header__desc {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--text);
+}
+.header__button {
+  width: 155px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--buttonColor);
+  color: var(--white);
+  font-size: 20px;
+  font-family: Lato;
+  cursor: pointer;
+}
+.header__img__style {
+  width: 500px;
+  height: 360px;
+  margin-top: 77px;
+  margin-bottom: 123px;
+}
+.main {
+  background-color: var(--cards);
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: auto;
+  padding-bottom: 150px;
+}
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  justify-items: center;
+}
+.cards {
+  background: var(--cards);
+  box-shadow: 0px 0px 20px var(--box);
+  max-width: 340px;
+  cursor: pointer;
+}
+.cards__color {
+  width: 340px;
+  height: 222px;
+}
+.cards__color--one {
+  background-color: #ff6363;
+}
+.cards__color--two {
+  background-color: #63ecff;
+}
+.cards__color--three {
+  background-color: #f363ff;
+}
+.cards__color--four {
+  background-color: #63ff73;
+}
+.cards__color--five {
+  background-color: #ffdd63;
+}
+.cards__color--six {
+  background-color: #6663ff;
+}
+
+.card__text__wrapper {
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.card__titulo {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--title);
+  margin-bottom: 25px;
+}
+.card__desc {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text);
+}
+.contato__titulo {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--title);
+  padding-top: 85px;
+  margin-bottom: 60px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+.form__input {
+  width: 470px;
+  height: 65px;
+  border-radius: 6px;
+  background-color: var(--white);
+  padding: 20px 15px;
+  color: #6e7275 74%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+.textarea {
+  resize: none;
+  border: none;
+  height: 165px;
+  margin-bottom: 15px;
+}
+.button__style {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--buttonColor);
+  margin-bottom: 150px;
+  cursor: pointer;
+}
+@media (max-width: 1250px) {
+  .header__container {
+    justify-content: space-around;
+  }
+  .main__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    column-gap: 0;
+  }
+  .header__img__style {
+    width: 350px;
+    height: 250px;
+    margin-top: 114px;
+    margin-bottom: 88px;
+  }
+}
+@media (max-width: 886px) {
+  .main__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 0;
+  }
+  .header__text__wrapper {
+    max-width: 375px;
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .header__text__wrapper {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__input {
+    width: 90%;
+    height: 60px;
+  }
+}
