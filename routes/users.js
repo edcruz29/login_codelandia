@@ -14,8 +14,9 @@ router.get('/cadastro', (req,res,next)=>{
 
 router.post('/cadastro', (req,res,next)=>{
   const {nome,email,senha,confirmar} = req.body;
- usuariosController.criarUsuario(nome, email, senha,confirmar);
-  res.redirect('/')
+ const usuario = usuariosController.criarUsuario(nome, email, senha,confirmar);
+ req.session.usuario = usuario.nome
+ res.redirect('/produtos');
   
 })
 
@@ -23,7 +24,7 @@ router.post("/login", function (req, res, next) {
   const { email, senha} = req.body;
   const usuario = usuariosController.validarUsuario(email,senha);
   req.session.usuario=usuario;
-  res.render('produtos', { usuario: req.session.usuario});
+  res.redirect('produtos');
 });
 router.get('/produtos', verificarLogin, function(req, res, next){
  
