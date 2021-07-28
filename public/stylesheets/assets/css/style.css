@@ -8,13 +8,19 @@ body {
 .modo__noturno {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 15px;
+}
+.fa-door-open{
+  color: var(--text);
 }
 .fa-moon {
   color: var(--white);
+  padding-right: 10px;
 }
 .fa-sun {
   color: var(--text);
+  padding-right: 10px;
 }
 #theme {
   font-size: 25px;

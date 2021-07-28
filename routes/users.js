@@ -14,11 +14,8 @@ router.get('/cadastro', (req,res,next)=>{
 
 router.post('/cadastro', (req,res,next)=>{
   const {nome,email,senha,confirmar} = req.body;
-  const usuario = usuariosController.criarUsuario(nome, email, senha,confirmar);
-  
-  req.session.usuario = usuario;
-  console.log(req.session.usuario);
-  res.render('produtos', { usuario: req.session.usuario});
+ usuariosController.criarUsuario(nome, email, senha,confirmar);
+  res.redirect('/')
   
 })
 
