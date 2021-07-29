@@ -5,10 +5,10 @@
 Tabela de Conteúdos
 ==========================
 <!--ts-->
-*[Sobre](#Sobre)
-*[Tabela de Conteudo](#tabela-de-conteudo)
-*[Instalação](#instalacao)
-*[Como usar](#como-usar)
-    *[Pre Requisitos](#pre-requisitos)
-*[Tests](#testes)
-*[Tecnologias](#tecnologias)
+* [Sobre](#Sobre)
+* [Tabela de Conteudo](#tabela-de-conteudo)
+* [Instalação](#instalacao)
+* [Como usar](#como-usar)
+    * [Pre Requisitos](#pre-requisitos)
+* [Tests](#testes)
+* [Tecnologias](#tecnologias)
